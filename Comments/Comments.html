@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="Comments.css"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
+
+
 
 input[type=text], select, textarea {
   width: 100%;
@@ -33,6 +36,7 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
+
 
 .container {
   border-radius: 5px;
@@ -70,52 +74,66 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h2>Responsive Form</h2>
-<p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+<h2>Comments Form</h2>
 
 <div class="container">
   <form action="/action_page.php">
-    <div class="row">
-      <div class="col-25">
-        <label for="fname">First Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="lname">Last Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="country">Country</label>
-      </div>
-      <div class="col-75">
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="subject">Could you tell us you reasons for giving this rating? </label>
-      </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <div class="row">
+
+    <label for="rating">How would you rate our service?</label>
+        <div id="rating-section" class="rating-scale">
+          <div class="rating-numbers">
+            <label for="rating-1">&nbsp;&nbsp;1</label>
+            <label for="rating-2">2</label>
+            <label for="rating-3">3</label>
+            <label for="rating-4">4</label>
+            <label for="rating-5">5</label>
+            <label for="rating-6">6</label>
+            <label for="rating-7">7</label>
+            <label for="rating-8">8</label>
+            <label for="rating-9">9</label>
+            <label for="rating-10">10</label>
+          </div>
+          <div class="rating-circles">
+            <input type="radio" name="rating" id="rating-1" value="1" required>
+            <input type="radio" name="rating" id="rating-2" value="2" required>
+            <input type="radio" name="rating" id="rating-3" value="3" required>
+            <input type="radio" name="rating" id="rating-4" value="4" required>
+            <input type="radio" name="rating" id="rating-5" value="5" required>
+            <input type="radio" name="rating" id="rating-6" value="6" required>
+            <input type="radio" name="rating" id="rating-7" value="7" required>
+            <input type="radio" name="rating" id="rating-8" value="8" required>
+            <input type="radio" name="rating" id="rating-9" value="9" required>
+            <input type="radio" name="rating" id="rating-10" value="10" required>
+          </div>
+        </div>
+      <br>
+    <label for="subject">Please could you tell us you reasons for giving this rating?</label>
+    <textarea id="subject" name="subject" placeholder="Write your reasons.." style="height:200px" required ></textarea>
+
+    <label for="dropdown">How did you want to complete this task today? (optional)</label>
+    <select id="dropdown1" name="country" required>
+      <option value="" disabled selected>-- Please select --</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="dropdown">If you had to complete this task again, how would you prefer to do it? (optional)</label>
+    <select id="dropdown2" name="country2" required>
+      <option value="" disabled selected>-- Please select --</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    
+
+    <div style="display: flex; justify-content: center; align-items: center; height: 200px;">
       <input type="submit" value="Submit">
     </div>
+    
   </form>
 </div>
+
 
 </body>
 </html>
