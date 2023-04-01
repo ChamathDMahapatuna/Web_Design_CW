@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Example Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.alert-message {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.rating-numbers {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 250px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+.rating-circles {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 250px;
+  width: 100%;
+}
+
+
+.rating-circles input[type="radio"] {
+  display: block;
+}
+
+select:focus option {
+  background-color: #d3d3d3;
+}
+
+
