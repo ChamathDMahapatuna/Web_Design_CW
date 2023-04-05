@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="logo.png">
+        <title>
+            La Guitare | Invoice
+        </title>
+        
+        <link rel="stylesheet" href="invoice.css">
+        
+    </head>
+    <body>
+        <a id="backTo" href="store.html">Back to shop</a><br><br>
+        <div id="invoiceContent">
+            <div class="invoice-box">
+                <h2 class="section-header">-INVOICE-</h2>
+                <tr class="information">
+                    <td colspan="2">
+                        <table class="companyDetails">
+                            <tr>
+                                <td>
+                                
+                                    +94 112839626 <br /><br />
+                                    La Guitare <br />
+                                    No 197/8, <br />
+                                    Galle Road,<br />
+                                    Colombo.
+                                
+                                </td>    <td>
+                                    <br />
+                                    Created on: 2023
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <table class="bottom"> 
+                                <tr>
+                                    <td >
+                                        <img src="logo.png" alt="Company logo" style="width: 100%; max-width: 100px" />
+                                    </td>
+                                    <td>
+                                        La Guitare<br />
+                                        Contact Us : +94112839626<br />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <div class="userDetails">
+                        <p id="coustomerDTitile">Customer Details</p>
+                        <p id="paragraph"></p>
+                        <hr>
+                    </div>
+                    <section class="container content-section">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">ITEM</span>
+                            <span class="cart-price cart-header cart-column">PRICE</span>
+                        </div>
+                        
+                        <div id="cartItems"></div>   
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total</strong>
+                            <span id="totalOut"></span>
+                        </div>
+                    </section>        
+                </table>
+            </div>
+        </div>        
+        <script>
+            document.getElementById("totalOut").innerHTML=localStorage.getItem("textval");
+            document.getElementById("cartItems").innerHTML=localStorage.getItem("ITEMS");
+        </script>
+        <script src="invoice.js"></script>
+    </body>
+</html>

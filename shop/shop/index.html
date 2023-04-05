@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script> 
+        // Passing Values To Invoice Page
+        function passvalues()
+        {
+            var finalTotal=document.getElementsByClassName("total")[0].innerText;
+            console.log(finalTotal);
+            localStorage.setItem("textval",finalTotal);
+            return false; 
+        }
+
+       
+        
+    </script>
+</head>
+<body class="">
+    
+    <div class="container">
+        <header>
+            <h1>Your Shopping Cart</h1>
+            <div class="shopping">
+                <img src="image/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1>Card</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">
+                <label>Total Price</label>0</div>
+            <div class="closeShopping">Close</div>
+            <div class="button-btc">
+            <div data-model-target="#model" class="btn btn-primary btn-purchase">PURCHASE</div>
+        </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    
+    
+
+    <!--Beginning Of User Details Form-->
+<div class="model" id="model">
+    <div class="model-header">
+        <div class="title">Customer Details</div>
+        <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="model-body">
+        <form  id="create-account-form" action="invoice.html" method="GET">
+            <!-- Username -->
+            <div class="input-group">
+                <label for="username">Name</label>
+                <input type="text" id="username" placeholder="Name" name="Name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <!-- E-mail -->
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Email" name="Email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <!-- Address -->
+            <div class="input-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Address" name="Address">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <!--Mobile number-->
+            <div class="input-group">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" id="mobileNumber" placeholder="Mobile Number" name="Phone">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <!-- Zip code -->
+            <div class="input-group">
+                <label for="mobileNumber">Zip code</label>
+                <input type="zip" id="Zipcode" placeholder="Zip code" name="Zip">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <form action="output-Javascript-Localstorage.html" method="POST">
+                <input id="btnPopup" type="submit" value="Checkout" onclick="passvalues(),invoiceData()">
+                <script>
+                function invoiceData(){
+                    var productsVar = document.getElementById('mydiv1').innerHTML;
+                    localStorage.setItem("ITEMS",productsVar);
+                    return;
+                }
+                </script>
+            </form>
+            
+        <script src="userInputValidation.js"></script>
+    </div>
+</div>
+<div id="overlay"></div>
+<!--End Of User Detail Form-->
+
+    <script src="userDetailForm.js" async></script>
+
+
+</body>
+</html>
