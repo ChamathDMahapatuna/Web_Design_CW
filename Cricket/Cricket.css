@@ -7,7 +7,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-	background-color: #000000;
+	background-color: #3508089b;
 	color: white;
 }
 
@@ -72,6 +72,12 @@ section{
     padding: 10px;
 }
 
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .images img {
     margin: 10px;
 	height: 120px;
@@ -82,7 +88,7 @@ section{
 }
 
 .images img:hover {
-    scale: 1.2;
+    scale: 2;
 }
 
 main section p {
