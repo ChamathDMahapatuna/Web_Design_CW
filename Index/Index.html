@@ -11,107 +11,58 @@
 
 <body>
 
-  <!-- <div id="splash-screen">
-    <div id="typedtext"></div> -->
-
-    <!-- <script>
-      // set up text to print, each item in array is new line
-      var aText = new Array(
-        "Group Members",
-        "Chamath Mahapatuna",
-        "Agrani Ranathunga",
-        "Dineth sadeepa",
-        "Dinuk Thiwanka",
-      );
-      var iSpeed = 100; // time delay of print out
-      var iIndex = 0; // start printing array at this posision
-      var iArrLength = aText[0].length; // the length of the text array
-      var iScrollAt = 20; // start scrolling up at this many lines
-
-      var iTextPos = 0; // initialise text position
-      var sContents = ''; // initialise contents variable
-      var iRow; // initialise current row
-
-      function typewriter() {
-        sContents = ' ';
-        iRow = Math.max(0, iIndex - iScrollAt);
-        var destination = document.getElementById("typedtext");
-
-        while (iRow < iIndex) {
-          sContents += aText[iRow++] + '<br />';
-        }
-        destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-        if (iTextPos++ == iArrLength) {
-          iTextPos = 0;
-          iIndex++;
-          if (iIndex != aText.length) {
-            iArrLength = aText[iIndex].length;
-            setTimeout("typewriter()", 500);
-          }
-        } else {
-          setTimeout("typewriter()", iSpeed);
-        }
-      }
-      typewriter();
-    </script> -->
-
-
   </div>
   <nav>
-    <a href="/Index/Index.html"><img src="Logo.png" alt="Logo"></a>
+    <a href="/Index/Index.html"><img src="image/Logo.png" alt="Logo"></a>
+    
     <ul>
-      <li><a href="/Index/Index.html">Home</a></li>
-      <li><a href="/Comments/Comments.html">Comments</a></li>
-      <li><a href="buy-products.html">Buy Products</a></li>
-      <li><a href="quiz.html">Quiz</a></li>
-      <li><a href="student-details.html">Student Details</a></li>
-      <li><a href="/Sitemap/Sitemap.html">Sitemap</a></li>
-      <li><a href="/Gallery/Gallery.html">Gallery</a></li>
-    </ul>
+			<li><a href="/Index/Index.html"><font COLOR="#ffff00">Home</font></a></li>
+			<li><a href="/Comments/Comments.html">Comments</a></li>
+			<li><a href="/shop/shop/index.html">Buy Products</a></li>
+			<li><a href="/Student_3/quiz.html">Quiz</a></li>
+			<li><a href="/Student_3/student-details.html">Student Details</a></li>
+			<li><a href="/Sitemap/Sitemap.html">Sitemap</a></li>
+			<li><a href="/Gallery/Gallery.html">Gallery</a></li>
+		</ul>
   </nav>
 
-  <header>
-    <h1>Sports Website</h1>
-  </header>
-  
 
-      <video src="image/bg-video.mp4" autoplay loop muted></video>
-
-  
   <section class="container">
     <div class="row">
       <div class="col">
-        <a href="cricket.html">
-          <img src="image/cricket.JFIF" alt="Cricket">
-          <p>Cricket</p>
+        <a href="Cricket\Cricket.html">
+          <img src="image/1.JPG" alt="Cricket">
+        
         </a>
       </div>
       <div class="col">
-        <a href="football.html">
-          <img src="image/football.JFIF" alt="Football">
-          <p>Football</p>
+        <a href="Additional Page - Rugby\rugby.html">
+          <img src="image/4.PNG" alt="Rugby">
+      
+       
         </a>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <a href="swimming.html">
-          <img src="image/swimming.jpg" alt="Swimming">
-          <p>Swimming</p>
+        <a href="BasketBall\Basketball.html">
+          <img src="image/3.PNG" alt="Basketball">
+       
         </a>
       </div>
       <div class="col">
-        <a href="rugby.html">
-          <img src="image/rugby.JFIF" alt="Rugby">
-          <p>Rugby</p>
+        <a href="FootBall\football.html">
+          <img src="image/2.PNG" alt="Football">
         </a>
       </div>
     </div>
   </section>
   
-  
-
-
+  <footer>
+		<div class="footer-content">
+		  <p>&copy; 2023 SportSpot</p>
+		  <p class="editor"><a href="C:\Users\Chamster\Documents\GitHub\Web_Design_CW\Editor Agrani\agrani.html">Editor : <span>Agrani R</span></a></p>
+		</div>
+	</footer>
 </body>
-
 </html>

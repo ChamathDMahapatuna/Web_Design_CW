@@ -1,29 +1,4 @@
-// //   // Get the input values
-// //   var rating = document.forms["myForm"]["rating"].value;
-// //   var reasons = document.forms["myForm"]["subject"].value;
-// //   var taskToday = document.forms["myForm"]["country"].value;
 
-// //   // Check if rating is selected
-// //   if (rating == "") {
-// //     alert("Please select your rating value.");
-// //     return false;
-// //   }
-
-// //   // Check if reasons are provided
-// //   if (reasons == "") {
-// //     alert("Please provide your reasons for giving this rating.");
-// //     return false;
-// //   }
-
-// //   // Check if task today is selected
-// //   if (taskToday == "") {
-// //     alert("Please select an option.");
-// //     return false;
-// //   }
-
-// //   // If all validations pass, return true
-// //   return true;
-// // }
 
 const form = document.querySelector('form');
 const submitButton = document.querySelector('button[type="submit"]');

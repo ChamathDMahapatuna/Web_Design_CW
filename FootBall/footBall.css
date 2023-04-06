@@ -208,34 +208,8 @@
     color: aqua;
     font-size: 60px;
   }
-  /* Styling for f */
-  .footer-page {
-    position: fixed;
-    align-items: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    height: 80px;
-  }
   
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 10px;
-    position: relative; /* add relative positioning to the parent */
-  }
   
-  .editor a {
-    text-align: right;
-    color: white;
-    text-decoration: none;
-  }
-  span{
-    color: aqua;
-    font-size: 40px;
-  }
   /* Table style */
   /* Table style */
   table {
@@ -291,6 +265,39 @@
   
   .World_Table{
     padding-top: 50px;
+  }
+  /* Styling for footer */
+  footer {
+    position: fixed;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+  }
+  
+  .editor a {
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    
+  }
+  
+  span{
+    transition: 1s;
+    color: white;
+    font-size: 17px;
+  }
+  
+  span:hover {
+    color: yellow;
   }
   
   

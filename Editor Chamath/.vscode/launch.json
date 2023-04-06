@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open dineth.html",
-            "file": "c:\\Users\\user\\Documents\\GitHub\\Web_Design_CW\\Editor Dineth\\dineth.html"
+            "name": "Open chamath.html",
+            "file": "c:\\Users\\user\\Documents\\GitHub\\Web_Design_CW\\Editor Chamath\\chamath.html"
         }
     ]
 }

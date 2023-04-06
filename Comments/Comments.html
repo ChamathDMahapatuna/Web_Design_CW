@@ -4,11 +4,10 @@
 <link rel="stylesheet" href="Comments.css"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 * {
   box-sizing: border-box;
 }
-
-
 
 input[type=text], select, textarea {
   width: 100%;
@@ -70,8 +69,97 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
+
+/* Styling for footer */
+footer {
+			position: fixed;
+			align-items: center;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.4);
+			color: white;
+		}
+
+		.footer-content {
+			display: flex;
+			justify-content: space-between;
+			padding: 0px 10px;
+		}
+
+		.editor a {
+			text-align: right;
+			color: white;
+			text-decoration: none;
+			
+		}
+
+		span{
+			transition: 1s;
+		}
+
+		span:hover {
+			color: yellow;
+		}
+    /* Styling for navigation bar */
+		nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			background-color: rgba(0, 0, 0, 0.7);
+			height: 80px;
+			padding: 0 20px;
+			z-index: 9999;
+			transition: background-color 0.2s;
+		}
+
+		nav img {
+			height: 90px;
+			margin-right: 20px;
+			cursor: pointer;
+		}
+
+		nav ul{
+			flex: 1;
+			text-align: right;
+			padding-right: 30px;
+		}
+
+		nav ul li{
+			list-style-type: none;
+			display:inline-block;
+			padding: 10px 2px;
+		}
+
+		nav ul li a {
+			color: white;
+			text-decoration:none;
+      		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			margin-right: 10px;
+			transition: color 1s;
+		}
+
+		nav ul li a:hover {
+			color: yellow;
+		}
 </style>
 </head>
+<nav>
+  <a href="home.html"><img src="images/Logo.png" alt="Logo"></a>
+  <ul>
+			<li><a href="/Index/Index.html">Home</a></li>
+			<li><a href="/Comments/Comments.html"><font COLOR="#ffff00">Comments</font></a></li>
+			<li><a href="/shop/shop/index.html">Buy Products</a></li>
+			<li><a href="/Student_3/quiz.html">Quiz</a></li>
+			<li><a href="/Student_3/student-details.html">Student Details</a></li>
+			<li><a href="/Sitemap/Sitemap.html">Sitemap</a></li>
+			<li><a href="/Gallery/Gallery.html">Gallery</a></li>
+		</ul>
+  </ul>
+</nav>
 <body>
 
 <h2>Comments Form</h2>
@@ -110,7 +198,7 @@ input[type=submit]:hover {
     <label for="subject">Please could you tell us you reasons for giving this rating?</label>
     <textarea id="subject" name="subject" placeholder="Write your reasons.." style="height:200px" required ></textarea>
 
-    <label for="dropdown">How did you want to complete this task today? (optional)</label>
+    <label for="dropdown">what did you think about user expirence of this web site? (optional)</label>
     <select id="dropdown1" name="country" required>
       <option value="" disabled selected>-- Please select --</option>
       <option value="australia">Australia</option>
@@ -118,7 +206,7 @@ input[type=submit]:hover {
       <option value="usa">USA</option>
     </select>
 
-    <label for="dropdown">If you had to complete this task again, how would you prefer to do it? (optional)</label>
+    <label for="dropdown">Which country are you from? (optional)</label>
     <select id="dropdown2" name="country2" required>
       <option value="" disabled selected>-- Please select --</option>
       <option value="australia">Australia</option>
@@ -133,6 +221,13 @@ input[type=submit]:hover {
     
   </form>
 </div>
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2023 SportSpot</p>
+    <p class="editor"><a href="C:\Users\Chamster\Documents\GitHub\Web_Design_CW\Editor Agrani\agrani.html">Editor : <span>Agrani A</span></a></p>
+  </div>
+</footer>
+
 
 
 </body>
