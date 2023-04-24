@@ -15,13 +15,25 @@
             localStorage.setItem("textval",finalTotal);
             return false; 
         }
-
-       
-        
     </script>
 </head>
+
 <body class="">
-    
+    <header>
+    <nav>
+        <a href="/Index/Index.html"><img src="image/Logo.png" alt="Logo"></a>
+        
+        <ul>
+            <li><a href="/Index/Index.html">Home</a></li>
+			<li><a href="/Comments/Comments.html">Comments</a></li>
+			<li><a href="/shop/shop/index.html"><font COLOR="#ffff00">Buy Products</font></a></li>
+			<li><a href="/Student_3/quiz.html">Quiz</a></li>
+			<li><a href="/Student_3/student-details.html">Student Details</a></li>
+			<li><a href="/Sitemap/Sitemap.html">Sitemap</a></li>
+			<li><a href="/Gallery/Gallery.html">Gallery</a></li>
+            </ul>
+      </nav>
+      </header>
     <div class="container">
         <header>
             <h1>Your Shopping Cart</h1>
@@ -30,18 +42,15 @@
                 <span class="quantity">0</span>
             </div>
         </header>
-
         <div class="list">
-          
         </div>
     </div>
     <div class="card">
-        <h1>Card</h1>
+        <h1>Cart</h1>
         <ul class="listCard">
         </ul>
         <div class="checkOut">
-            <div class="total">
-                <label>Total Price</label>0</div>
+            <div class="total">0</div>
             <div class="closeShopping">Close</div>
             <div class="button-btc">
             <div data-model-target="#model" class="btn btn-primary btn-purchase">PURCHASE</div>
@@ -50,9 +59,6 @@
     </div>
 
     <script src="app.js"></script>
-
-    
-    
 
     <!--Beginning Of User Details Form-->
 <div class="model" id="model">
@@ -121,6 +127,11 @@
 
     <script src="userDetailForm.js" async></script>
 
-
+    <footer>
+		<div class="footer-content">
+		  <p>&copy; 2023 SportSpot</p>
+		  <p class="editor"><a href="../../Editor Chamath/chamath.html">Editor : <span>Chamath M</span></a></p>
+		</div>
+	</footer>
 </body>
 </html>

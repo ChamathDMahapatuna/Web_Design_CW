@@ -1,47 +1,9 @@
 
 body{
 background-image: url("image/presentation.png");
-background-color: blue;
-}
-#typedtext{
-  color : white;
-	 line-height: nromal;
-	 font-size: 50px;
-   padding: 70px 0;
-line-height: 1.6;
-  text-align: center;
-}
-.auto-type p {
-  font-size: 24px;
-  white-space: nowrap;
-  overflow: hidden;
+
 }
 
-.auto-type span {
-  border-right: 0.15em solid black;
-  animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
-  display: inline-block;
-  margin: 0;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
-}
 /* Styling for navigation bar */
     nav {
       position: fixed;

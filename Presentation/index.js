@@ -1,5 +1,4 @@
-// // Hide the splash screen after 3 seconds
-//   setTimeout(function() {
-//     var splashScreen = document.getElementById("splash-screen");
-//     splashScreen.style.display = "none";
-//   }, 12000);
+// Redirect to another page after 4 seconds
+setTimeout(function() {
+  window.location.href = "../Index/index.html";
+}, 4000);
