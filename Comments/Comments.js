@@ -1,5 +1,3 @@
-
-
 const form = document.querySelector('form');
 const submitButton = document.querySelector('button[type="submit"]');
 
@@ -10,9 +8,8 @@ submitButton.addEventListener('click', function(event) {
   const reasons = document.getElementById('subject');
   const dropdownOne = document.getElementById('dropdown1');
   const dropdownTwo = document.getElementById('dropdown2'); 
-  
+
   let isValid = true;
-  
   if (rating.value === '') {
     rating.classList.add('alert');
     isValid = false;
